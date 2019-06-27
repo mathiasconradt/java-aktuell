@@ -1,0 +1,26 @@
+debug: true
+server:
+  port: 3000
+
+logging.level.com.example.demo: DEBUG
+logging.level.org.springframework: DEBUG
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-name: Java Aktuell Client
+            client-id: {CLIENT_ID}
+            client-secret: {CIENT_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
+              - offline_access
+            authorization-grant-type: authorization_code
+            logout-uri: https://{AUTH0_TENANT}.eu.auth0.com/v2/logout?client_id={CLIENT_ID}&returnTo=http://localhost:3000
+        provider:
+          auth0:
+            issuer-uri: https://{AUTH0_TENANT}.eu.auth0.com/
+            user-name-attribute: name
