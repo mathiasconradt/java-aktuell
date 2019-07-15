@@ -1,6 +1,7 @@
 # Spring Security 5 OIDC Login Prototype
 
 This work-in-progress prototype example uses Spring Boot 2.1.4 and Spring Security 5 to test and demonstrate OAuth2 Login support.
+It's the accompanying repository for the article published in Java Aktuell 05/2019: https://www.ijug.eu/de/java-aktuell/
 
 ## Running
 
@@ -26,3 +27,7 @@ You will be prompted to login, after which the user information from the ID toke
 - Uses Spring Security 5 OAuth2/OIDC features
 - Prototypes proper logout flow
 - Uses Authorization Code grant
+
+## Screencast
+
+[![Screencast](https://www.youtube.com/upload_thumbnail?v=I0sEY267UKE&t=hqdefault&ts=1563179260061)](https://youtu.be/I0sEY267UKE)
