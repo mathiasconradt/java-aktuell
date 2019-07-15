@@ -5,12 +5,6 @@ It's the accompanying repository for the article published in Java Aktuell 05/20
 
 ## Running
 
-Copy `src/main/resources/application.yml.example`:
-
-```bash
-cp src/main/resources/application.yml.example src/main/resources/application.yml
-```
-
 Update `application.yml` with values for your domain, client ID, and client secret.
 
 Run the application:
